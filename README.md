@@ -53,4 +53,4 @@ Hasilnya `proposal_magang.pdf` dan `laporan_magang.pdf` di folder proyek. Jika i
 
 ## Contributors
 
-- [@Aisarsyb](https://github.com/Aisarsyb)
+- Special credit to [@Aisarsyb](https://github.com/Aisarsyb) for developing the original [LaTeX Teknologi Kedokteran ITS template](https://github.com/Aisarsyb/template-LaTeX-TA-teknologi-kedokteran-its-2026), which this internship template builds upon.
