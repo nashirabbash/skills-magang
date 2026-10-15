@@ -1,0 +1,44 @@
+% Daftar awal memakai Heading 1 untuk judul dan 11 pt untuk isi.
+\renewcommand*\contentsname{DAFTAR ISI}
+\renewcommand*\listfigurename{DAFTAR GAMBAR}
+\renewcommand*\listtablename{DAFTAR TABEL}
+
+\begingroup
+\fontsize{11}{13}\selectfont
+\setlength{\cftaftertoctitleskip}{79pt}
+\renewcommand{\cfttoctitlefont}{\hfill\normalfont\bfseries\fontsize{12}{15}\selectfont\color{black}}
+\renewcommand{\cftaftertoctitle}{\hfill}
+\renewcommand{\cftchapleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsubsecleader}{\cftdotfill{\cftdotsep}}
+\renewcommand{\cftsubsubsecleader}{\cftdotfill{\cftdotsep}}
+\phantomsection\addcontentsline{toc}{chapter}{\contentsname}
+\tableofcontents
+\endgroup
+\cleardoublepage
+
+\begingroup
+\fontsize{11}{13}\selectfont
+\phantomsection\addcontentsline{toc}{chapter}{\listfigurename}
+\listoffigures
+\endgroup
+\cleardoublepage
+
+\begingroup
+\fontsize{11}{13}\selectfont
+\phantomsection\addcontentsline{toc}{chapter}{\listtablename}
+\listoftables
+\endgroup
+\cleardoublepage
+
+\begingroup
+\fontsize{11}{13}\selectfont
+\chapter*{DAFTAR SIMBOL}
+\phantomsection\addcontentsline{toc}{chapter}{DAFTAR SIMBOL}
+\noindent\begin{tabular}{@{}ll@{}}
+  $\mathbf{F}$ & Gaya \\[1ex]
+  $\mathbf{v}$ & Kecepatan \\[1ex]
+  $t$ & Waktu
+\end{tabular}
+\endgroup
+\cleardoublepage

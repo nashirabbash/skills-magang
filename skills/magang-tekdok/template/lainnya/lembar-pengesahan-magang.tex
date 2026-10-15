@@ -1,0 +1,60 @@
+\thispagestyle{plain}
+\phantomsection\addcontentsline{toc}{chapter}{LEMBAR PENGESAHAN}
+\begingroup
+\paragraphtextstyle
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\begin{center}
+  \textbf{LEMBAR PENGESAHAN\ifdefined\approvaltitlelabel\ LAPORAN\fi}
+\end{center}
+\ifdefined\approvaltitlelabel
+  \vspace{8mm}
+  \renewcommand{\arraystretch}{1.8}
+\else
+  \renewcommand{\arraystretch}{1.5}
+\fi
+\noindent\begin{tabularx}{\textwidth}{@{}p{0.37\textwidth}cX@{}}
+  Mata Kuliah/Kode & : & Magang / KT234602 \\
+  \ifdefined\approvaltitlelabel\approvaltitlelabel\else Judul\fi & : & \tatitle \\
+  Nama Mahasiswa & : & \name \\
+  NRP & : & \nrp \\
+  Program Studi & : & \studyprogram \\
+  Fakultas & : & Fakultas \faculty \\
+  Waktu Pelaksanaan Magang & : & \internshipperiod \\
+  Tempat Magang & : & \internshipcompany \\
+  Alamat Magang & : & \internshipaddress \\
+  Telp. & : & \internshipphone \\
+  E-mail & : & \internshipemail \\
+\end{tabularx}
+
+\ifdefined\approvaltitlelabel
+  \vspace{4mm}
+  \renewcommand{\arraystretch}{1}
+  \noindent\begin{tabularx}{\textwidth}{@{}>{\centering\arraybackslash}X>{\centering\arraybackslash}X@{}}
+    & \place, \the\day{} \MONTH{} \the\year \\
+    Mengetahui & \\
+    Pembimbing Magang & Pembimbing Lapangan \\
+    \multicolumn{2}{c}{\rule{0pt}{20mm}} \\
+    (\advisor) & (\internshipsupervisor) \\
+    NIP. \advisornip & \\
+  \end{tabularx}
+  \vspace{4mm}
+  \begin{center}
+    Koordinator Magang\par
+    \rule{0pt}{20mm}\par
+    (\internshipcoordinator)\par
+    NUPTK. \internshipcoordinatornip
+  \end{center}
+\else
+  \vspace{32mm}
+  \renewcommand{\arraystretch}{1}
+  \noindent\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}X>{\raggedleft\arraybackslash}X@{}}
+    & \place, \the\day{} \MONTH{} \the\year \\
+    Mengetahui & \\
+    Koordinator Magang & Dosen Pembimbing Magang \\
+    \multicolumn{2}{c}{\rule{0pt}{30mm}} \\
+    (\internshipcoordinator) & (\advisor) \\
+    NIP. \internshipcoordinatornip & NIP. \advisornip \\
+  \end{tabularx}
+\fi
+\endgroup
